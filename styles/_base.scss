@@ -1,0 +1,13 @@
+// Base
+
+body {
+  animation: fadein 2s;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

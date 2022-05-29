@@ -1,0 +1,13 @@
+// Career
+
+#career {
+  .job {
+    animation: fadein 3s;
+    margin-top: 3rem;
+
+    .employer {
+      font-style: italic;
+      margin-right: 1.5rem;
+    }
+  }
+}

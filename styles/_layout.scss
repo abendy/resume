@@ -1,0 +1,21 @@
+// Layout
+
+body {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  padding-left: 3rem;
+
+  @media (max-width: 800px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+#main {
+  width: 60%;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}

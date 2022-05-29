@@ -1,0 +1,40 @@
+doctype html
+
+-
+  function prettyDate(dateString) {
+    var now = Date.now();
+
+    if (dateString === null || dateString > now)
+      return 'Present';
+
+    return new Date(dateString).getFullYear();
+  }
+
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    title= title
+
+    link(rel='stylesheet' href='assets/styles.css' type='text/css')
+
+  body
+    #main
+      #header
+        include:markdown-it ../contents/me.md
+
+      #lead
+        include:markdown-it ../contents/lead.md
+
+      #expertise
+        include:markdown-it ../contents/expertise.md
+
+      #career
+        each job, index in jobs
+          div.job(class=(index === 0 ? 'job-0' : 'job-' + index))
+            h2.position= job.position
+            p
+              span.employer= '@ ' + job.employer
+              span.time= prettyDate(job.startdate) + ' — ' + prettyDate(job.enddate)
+            div.desc!= job.contents

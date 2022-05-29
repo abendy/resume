@@ -1,0 +1,32 @@
+{
+  "source": "./contents",
+  "metadata": {
+    "title": "Resume of Allan T. Bendy"
+  },
+  "plugins": [
+    {
+      "metalsmith-collections": {
+        "jobs": {
+          "pattern": "jobs/*",
+          "sortBy": "enddate",
+          "reverse": true
+        }
+      }
+    },
+    { "metalsmith-markdownit": {} },
+    { "metalsmith-include": {} },
+    {
+      "metalsmith-layouts": {
+        "directory": "./templates"
+      }
+    },
+    {
+      "@metalsmith/sass": {
+        "style": "expanded",
+        "entries": {
+          "./styles/main.scss": "./assets/styles.css"
+        }
+      }
+    }
+  ]
+}

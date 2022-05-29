@@ -1,0 +1,54 @@
+// Typeography
+
+$external-fonts: (
+  'https://fonts.googleapis.com/css?family=Montserrat:300&display=swap',
+  'https://fonts.googleapis.com/css?family=Spectral:600&display=swap',
+);
+
+@if variable-exists(external-fonts) {
+  @each $url in $external-fonts {
+    @import url($url);
+  }
+}
+
+@mixin montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@mixin spectral {
+  font-family: 'Spectral', serif;
+  white-space: nowrap;
+}
+
+* {
+  color: #000;
+}
+
+h1 {
+  @include spectral;
+  font-size: 1rem;
+  font-size: 1.15rem;
+}
+
+h2 {
+  @include spectral;
+  font-size: 1.35rem;
+  line-height: 0.5;
+}
+
+h3, h4 {
+  @include montserrat;
+  font-size: 1rem;
+}
+
+p, li {
+  @include montserrat;
+  font-size: 1rem;
+}
+
+a {
+  border-bottom: 1px dashed #c3c3c3;
+  text-decoration: none;
+}
