@@ -1,5 +1,5 @@
 build
 contents/**/*.md
-!contents/index.md
+!contents/*.md
 node_modules
 yarn-error.log
