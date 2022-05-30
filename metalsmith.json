@@ -4,6 +4,7 @@
     "title": "Resume of Allan T. Bendy"
   },
   "plugins": [
+    { "metalsmith-cleanscript": {} },
     {
       "metalsmith-collections": {
         "jobs": {

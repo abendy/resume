@@ -908,6 +908,13 @@ mdurl@^1.0.1:
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
 
+metalsmith-cleanscript@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/metalsmith-cleanscript/-/metalsmith-cleanscript-0.0.4.tgz#db7086e86d0331b73571214e8e179158f8f5ca37"
+  integrity sha1-23CG6G0DMbc1cSFOjheRWPj1yjc=
+  dependencies:
+    path "^0.4.9"
+
 metalsmith-collections@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/metalsmith-collections/-/metalsmith-collections-0.9.0.tgz#a0d19347a51d5fbd026899dfc1f4d68af50e0e17"
@@ -1115,6 +1122,11 @@ path-to-regexp@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.2.1.tgz#90b617025a16381a879bc82a38d4e8bdeb2bcf45"
   integrity sha512-gu9bD6Ta5bwGrrU8muHzVOBFFREpp2iRkVfhBJahwJ6p6Xw20SjT0MxLnwkjOibQmGSYhiUnf2FLe7k+jcFmGQ==
+
+path@^0.4.9:
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/path/-/path-0.4.10.tgz#22fef27b7cd6eaf30fb13fc027801e956e518ef1"
+  integrity sha1-Iv7ye3zW6vMPsT/AJ4AelW5RjvE=
 
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   version "2.3.1"
