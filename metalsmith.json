@@ -22,6 +22,28 @@
       }
     },
     {
+      "metalsmith-html-tidy": {
+        "pattern": "**/index.html",
+        "tidyOptions": {
+          "indent": true,
+          "indent-spaces": 2,
+          "wrap": 0,
+          "vertical-space": true,
+          "quiet": false,
+          "show-info": false,
+          "show-warnings": true
+        }
+      }
+    },
+    {
+      "metalsmith-html-minifier": {
+        "pattern": "**/index.html",
+        "minifierOptions": {
+          "removeComments": true
+        }
+      }
+    },
+    {
       "@metalsmith/sass": {
         "style": "expanded",
         "entries": {
