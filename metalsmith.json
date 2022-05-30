@@ -7,7 +7,7 @@
     {
       "metalsmith-collections": {
         "jobs": {
-          "pattern": "jobs/*",
+          "pattern": "**/jobs/*",
           "sortBy": "enddate",
           "reverse": true
         }
